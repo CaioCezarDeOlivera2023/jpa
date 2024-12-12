@@ -17,6 +17,7 @@ public class Programa {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
+		
 		em.persist(p1);
 		em.persist(p2);
 		em.persist(p3);
